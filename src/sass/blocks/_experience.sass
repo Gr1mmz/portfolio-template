@@ -3,24 +3,25 @@
         +afterLineCenter
     &__wrapper
         padding: 0 65px
-        margin-top: 60px
         display: grid
         column-gap: 135px
         grid-template-columns: repeat(2, 425px)
     &__column
         padding-left: 35px
+        &-title
+            +beforeCircleSmall
         ul
             list-style-type: none
             margin: 0
-            li
-                position: relative
-                +experienceVerticalLine
-    &__column-title
-        +beforeCircleSmall
     &__item
         position: relative
-        padding-top: 45px
+        +experienceVerticalLine
         +experienceHorizontalLine
+        padding-top: 45px
+        &:last-child
+            &::after
+                top: 0
+                height: 64px
         &-header
             display: flex
         &-location

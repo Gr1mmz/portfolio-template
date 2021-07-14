@@ -2,7 +2,9 @@ const hamburger = document.querySelector(".hamburger"),
     menu = document.querySelector(".menu"),
     menuClose = document.querySelector(".menu__close"),
     overlay = document.querySelector(".menu__overlay"),
-    menuLink = document.querySelectorAll(".menu__link");
+    menuLinks = document.querySelectorAll(".menu__link"),
+    skillsCounters = document.querySelectorAll(".using__skills-percent"),
+    slillsBars = document.querySelectorAll(".bar__fill");
 
 hamburger.addEventListener("click", () => {
     menu.classList.add("active");
@@ -19,9 +21,13 @@ overlay.addEventListener("click", () => {
     document.body.style.overflow = "visible";
 });
 
-menuLink.forEach((item) => {
+menuLinks.forEach((item) => {
     item.addEventListener("click", () => {
         menu.classList.remove("active");
         document.body.style.overflow = "visible";
     });
+});
+
+skillsCounters.forEach((item, i) => {
+    slillsBars[i].style.width = item.innerHTML;
 });
