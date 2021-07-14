@@ -1,0 +1,45 @@
+.about
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        gap: 68px
+    &__image
+        width: auto
+        height: 100%
+    &__title
+        position: relative
+        +afterLineLeft
+    &__descr
+        margin-top: 25px
+        font-weight: 500
+        font-size: 14px
+        line-height: 21px
+    &__skills
+        width: 570px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 40px
+        .item
+            display: flex
+            gap: 20px
+            width: 260px
+            margin-bottom: 40px
+            &__image
+                position: relative
+                // display: flex
+                width: 40px
+                // justify-content: flex-end
+                // align-items: flex-start
+                +beforeCircleLeftTop
+                img
+                    display: block
+                    margin-left: 15px
+                    margin-top: 15px
+            &__text
+                margin-top: 6px
+                font-weight: 500
+                font-size: 12px
+                line-height: 18px
+            &__descr
+                margin: 0

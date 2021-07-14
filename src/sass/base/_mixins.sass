@@ -1,4 +1,4 @@
-=before-circle
+=beforeCircleLeft
     &::before
         position: absolute
         content: ""
@@ -9,3 +9,33 @@
         left: 0
         z-index: -1
         background: $accent-color
+=beforeCircleLeftTop
+    &::before
+        position: absolute
+        content: ""
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        top: 0
+        left: 0
+        z-index: -1
+        background: $accent-color
+=afterLineLeft
+    &::after
+        position: absolute
+        content: ""
+        width: 60px
+        height: 3px
+        bottom: -3px
+        left: 0
+        background-color: $accent-color
+=afterLineCenter
+    &::after
+        position: absolute
+        content: ""
+        width: 60px
+        height: 3px
+        bottom: -25px
+        left: 50%
+        transform: translateX(-50%)
+        background-color: $accent-color
