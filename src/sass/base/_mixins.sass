@@ -20,6 +20,30 @@
         left: 0
         z-index: -1
         background: $accent-color
+=beforeCircleCenter
+    &::before
+        position: absolute
+        content: ""
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: -1
+        background: $accent-color
+=beforeCircleSmall
+    &::before
+        position: absolute
+        content: ""
+        width: 15px
+        height: 15px
+        border-radius: 100%
+        top: 50%
+        left: -50px
+        transform: translateY(-50%)
+        z-index: -1
+        background: $accent-color
 =afterLineLeft
     &::after
         position: absolute
@@ -39,3 +63,21 @@
         left: 50%
         transform: translateX(-50%)
         background-color: $accent-color
+=experienceVerticalLine
+    &::after
+        content: ""
+        width: 1px
+        height: calc(100% + 8px)
+        position: absolute
+        top: -8px
+        left: -43px
+        background-color: #000
+=experienceHorizontalLine
+    &::before
+        content: ""
+        height: 1px
+        width: 43px
+        top: 63px
+        left: -43px
+        position: absolute
+        background: #000

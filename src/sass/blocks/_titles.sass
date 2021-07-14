@@ -1,4 +1,6 @@
 .title
+    position: relative
+    margin: 0
     font-weight: bold
     font-size: 36px
     &_fz48
@@ -7,16 +9,26 @@
     &_fz36
         font-size: 36px
         line-height: 60px
+    &_fz20
+        font-size: 20px
+        line-height: 30px
     &_fz14
         font-size: 14px
         line-height: 21px
         font-weight: bold
+    &_center
+        text-align: center
 .subtitle
     position: relative
     padding-left: 10px
     z-index: 2
     font-weight: bold
-    +beforeCircleLeft
+    &_left
+        +beforeCircleLeft
+    &_center
+        text-align: center
+        padding: 0
+        +beforeCircleCenter
     &_fz16
         font-size: 16px
         line-height: 24px
