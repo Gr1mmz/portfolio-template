@@ -1,0 +1,33 @@
+.price
+    padding-top: 66px
+    &__subtitle
+        position: relative
+        +afterLineCenter
+        &::after
+            bottom: -31px
+    &__wrapper
+        margin-top: 91px
+        display: flex
+        justify-content: space-between
+    &__column
+        &-item
+            position: relative
+            width: 366px
+            padding-left: 25px
+            +beforeCircleSmall
+            &::before
+                top: 10px
+                left: 0
+            &:not(:last-child)
+                margin-bottom: 15px
+        &-text
+            display: flex
+            justify-content: space-between
+        &-cost
+            font-size: 14px
+            line-height: 21px
+            font-weight: 700
+        &-descr
+            margin-top: 5px
+            font-size: 12px
+            line-height: 18px
