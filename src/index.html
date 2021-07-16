@@ -114,7 +114,9 @@
             content="icons/favicon//ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body>
@@ -663,11 +665,11 @@
                         </div>
                         <form action="#" class="contacts__form">
                             <div class="contacts__input">
-                                <input id="name" name="name" type="text">
+                                <input id="name" name="name" type="text" placeholder="Иван" required>
                                 <label for="name">Ваше имя</label>
                             </div>
                             <div class="contacts__input">
-                                <input id="email" name="email" type="email">
+                                <input id="email" name="email" type="email" required>
                                 <label for="email">Ваша почта</label>
                             </div>
                             <div class="contacts__textarea">
@@ -676,6 +678,10 @@
                             </div>
                             <div class="contacts__btn">
                                 <button class="btn btn_shadow">Отправить сообщение</button>
+                                <div class="contacts__policy">
+                                    <input id="policy" type="checkbox" required>
+                                    <label for="policy"><span>Я согласен(а) с <a href="/policy.html" target="_blank">политикой конфиденциальности</a></span></label>
+                                </div>
                             </div>
                         </form>
                     </div>
